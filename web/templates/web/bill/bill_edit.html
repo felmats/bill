@@ -1,0 +1,182 @@
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <a href="./register.html" class="btn btn-primary btn-block">新規作成</a>
+          <ul class="nav nav-sidebar">
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="./home.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
+            <li><a href="./created.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 作成済み <span class="badge">13</span></a></li>
+            <li><a href="./send.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 請求済み <span class="badge">4</span></a></li>
+            <li><a href="./search.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 請求書検索</a></li>
+            <li><a href="./export.html"><span class="glyphicon glyphicon-export" aria-hidden="true"></span> 請求書一覧の出力</a></li>
+            <li><a href="./draft.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 下書き <span class="badge">7</span></a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="./maintenance.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> メンテナンス</a></li>
+            <li><a href="./template.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> テンプレートの編集</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="sub-header">請求書の新規作成</h2>
+          <form role="form" class="form-horizontal">
+          <div class="form-group">
+              <label for="subject" class="col-sm-2 col-md-2 text-right control-label">請求日</label>
+              <div class="col-sm-8 col-md-8">
+                <input type="text" class="form-control bill-yyyymmdd datepicker" id="subject" placeholder="日付を入力してください。">
+              </div>
+              <div class="col-sm-c col-md-2">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="subject" class="col-sm-2 col-md-2 text-right control-label">請求番号</label>
+              <div class="col-sm-8 col-md-8">
+                <input type="text" class="form-control" id="subject" placeholder="請求番号を入力してください。">
+              </div>
+              <div class="col-sm-c col-md-2">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="subject" class="col-sm-2 col-md-2 text-right control-label">請求先</label>
+              <div class="col-sm-8 col-md-8">
+                <input type="text" class="form-control" id="subject" placeholder="請求先を入力してください。">
+              </div>
+              <div class="col-sm-c col-md-2">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="subject" class="col-sm-2 col-md-2 text-right control-label">件名</label>
+              <div class="col-sm-8 col-md-8">
+                <input type="text" class="form-control" id="subject" placeholder="件名を入力してください。">
+              </div>
+              <div class="col-sm-c col-md-2">
+              </div>
+          </div>
+          <table class="table table-striped table-hover">
+            <thead>
+              <th></th>
+              <th>品名</th>
+              <th>数量</th>
+              <th>単価</th>
+              <th>金額</th>
+            </thead>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td>合計</td>
+                <td class="text-right" colspan="3">￥9999,999</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>消費税</td>
+                <td class="text-right" colspan="3">￥9999,999</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>合計（税込）</td>
+                <td class="text-right" colspan="3">￥9999,999</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>
+                  1
+                </td>
+                <td>
+                  <input type="text" class="form-control" id="subject" placeholder="" value="開発支援">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="1">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999" disabled>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  2
+                </td>
+                <td>
+                  <input type="text" class="form-control" id="subject" placeholder="" value="開発支援">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="1">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999" disabled>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  3
+                </td>
+                <td>
+                  <input type="text" class="form-control" id="subject" placeholder="" value="開発支援">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="1">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999" disabled>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  4
+                </td>
+                <td>
+                  <input type="text" class="form-control" id="subject" placeholder="" value="開発支援">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="1">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="￥999,999" disabled>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  5
+                </td>
+                <td>
+                  <input type="text" class="form-control" id="subject" placeholder="品名を入力して下さい" value="">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="0" value="">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="￥999,999" value="">
+                </td>
+                <td>
+                  <input type="text" class="form-control text-right" id="subject" placeholder="" value="" disabled>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="form-group text-right">
+            <button type="button" class="btn btn-primary">登録</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(function() {
+      $('.datepicker').datepicker({
+        format: 'yyyy/mm/dd'
+        , language: 'ja'
+      })
+    });
+    </script>

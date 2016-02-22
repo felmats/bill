@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}請求書作成{% endblock title %}
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <a href="" class="btn btn-primary btn-block">新規作成</a>
+          <ul class="nav nav-sidebar">
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="./home.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> ホーム</a></li>
+            <li><a href="./created.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 作成済み <span class="badge">13</span></a></li>
+            <li><a href="./send.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 請求済み <span class="badge">4</span></a></li>
+            <li><a href="./search.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 請求書検索</a></li>
+            <li><a href="./export.html"><span class="glyphicon glyphicon-export" aria-hidden="true"></span> 請求書一覧の出力</a></li>
+            <li><a href="./draft.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 下書き <span class="badge">7</span></a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="./maintenance.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> メンテナンス</a></li>
+            <li><a href="./template.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> テンプレートの編集</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+{% block content %}
+{% endblock content %}
+    <script type="text/javascript">
+    $(function() {
+      $('.datepicker').datepicker({
+        format: 'yyyy/mm/dd'
+        , language: 'ja'
+      })
+    });
+    </script>
+{% endblock content %}
